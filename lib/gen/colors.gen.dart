@@ -17,11 +17,14 @@ class AppColors {
   /// Color: #FF000000
   static const Color black = Color(0xFF000000);
 
-  /// Color: #FFFBCA1C
-  static const Color primary = Color(0xFFFBCA1C);
+  /// Color: #DFF7E2
+  static const Color lightGreen = Color(0xFFDFF7E2);
 
-  /// Color: #FFE4750E
-  static const Color secondary = Color(0xFFE4750E);
+  /// Color: #00D09E
+  static const Color primary = Color(0xFF00D09E);
+
+  /// Color: #093030
+  static const Color secondary = Color(0xFF093030);
 
   /// Color: #00000000
   static const Color transparent = Color(0x00000000);

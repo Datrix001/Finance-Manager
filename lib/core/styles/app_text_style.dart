@@ -8,8 +8,8 @@ final class AppTextStyles {
 
   static final h1 = TextStyle(
     fontFamily: FontFamily.poppins,
-    fontSize: AppFontSize.size40,
-    fontWeight: FontWeight.w400,
+    fontSize: AppFontSize.size64,
+    fontWeight: FontWeight.w100,
     color: AppColors.black,
   );
 

@@ -1,3 +1,18 @@
 {
-  "app_name": "FinWise"
+  "app_name": "FinWise",
+
+  "onbarding": {
+    "log_in": "Log In",
+    "sign_up": "Sign Up",
+    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. ",
+    "forgot_password": "Forgot Password?"
+  },
+  "log_in": {
+    "welcome": "Welcome",
+    "username": "Username Or Email",
+    "gmail": "example@example.com",
+    "password": "Password",
+    "or_sign_up": "or sign up with",
+    "no_account": "Don't have an account?"
+  }
 }

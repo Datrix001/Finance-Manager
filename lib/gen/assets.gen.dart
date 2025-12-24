@@ -45,10 +45,24 @@ class $AssetsSvgGen {
   List<String> get values => [vector];
 }
 
+class $AssetsTranslationsGen {
+  const $AssetsTranslationsGen();
+
+  /// File path: assets/translations/en-US.json
+  String get enUS => 'assets/translations/en-US.json';
+
+  /// File path: assets/translations/hi.json
+  String get hi => 'assets/translations/hi.json';
+
+  /// List of all assets
+  List<String> get values => [enUS, hi];
+}
+
 class Assets {
   const Assets._();
 
   static const $AssetsColorsGen colors = $AssetsColorsGen();
   static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsSvgGen svg = $AssetsSvgGen();
+  static const $AssetsTranslationsGen translations = $AssetsTranslationsGen();
 }
