@@ -19,6 +19,22 @@ class $AssetsColorsGen {
   List<String> get values => [colors];
 }
 
+class $AssetsFontsGen {
+  const $AssetsFontsGen();
+
+  /// File path: assets/fonts/Poppins-Black.ttf
+  String get poppinsBlack => 'assets/fonts/Poppins-Black.ttf';
+
+  /// File path: assets/fonts/Poppins-Light.ttf
+  String get poppinsLight => 'assets/fonts/Poppins-Light.ttf';
+
+  /// File path: assets/fonts/Poppins-Medium.ttf
+  String get poppinsMedium => 'assets/fonts/Poppins-Medium.ttf';
+
+  /// List of all assets
+  List<String> get values => [poppinsBlack, poppinsLight, poppinsMedium];
+}
+
 class $AssetsSvgGen {
   const $AssetsSvgGen();
 
@@ -33,5 +49,6 @@ class Assets {
   const Assets._();
 
   static const $AssetsColorsGen colors = $AssetsColorsGen();
+  static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsSvgGen svg = $AssetsSvgGen();
 }
