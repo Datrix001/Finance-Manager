@@ -13,4 +13,7 @@ class FontFamily {
 
   /// Font family: poppins
   static const String poppins = 'poppins';
+
+  /// Font family: sourceCode
+  static const String sourceCode = 'sourceCode';
 }

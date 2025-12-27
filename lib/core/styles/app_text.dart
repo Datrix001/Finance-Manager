@@ -10,6 +10,7 @@ Widget appTextH1(
   TextOverflow? overflow,
   int? maxLines,
   FontStyle? fontStyle,
+  FontWeight? fontWeight,
 }) => Text(
   text.tr(),
   textAlign: textAlign,
@@ -18,6 +19,7 @@ Widget appTextH1(
     decoration: decoration,
     overflow: overflow,
     fontStyle: fontStyle,
+    fontWeight: fontWeight,
   ),
   maxLines: maxLines,
 );
@@ -30,6 +32,7 @@ Widget appTextH2(
   TextOverflow? textOverflow,
   int? maxLines,
   FontStyle? fontStyle,
+  FontWeight? fontWeight,
 }) => Text(
   text.tr(),
   textAlign: textAlign,
@@ -38,6 +41,7 @@ Widget appTextH2(
     decoration: textDecoration,
     overflow: textOverflow,
     fontStyle: fontStyle,
+    fontWeight: fontWeight,
   ),
   maxLines: maxLines,
 );
@@ -50,6 +54,7 @@ Widget appTextH3(
   TextOverflow? textOverflow,
   int? maxLines,
   FontStyle? fontStyle,
+  FontWeight? fontWeight,
 }) => Text(
   text.tr(),
   textAlign: textAlign,
@@ -58,6 +63,7 @@ Widget appTextH3(
     decoration: textDecoration,
     overflow: textOverflow,
     fontStyle: fontStyle,
+    fontWeight: fontWeight,
   ),
   maxLines: maxLines,
 );
@@ -70,6 +76,7 @@ Widget appTextS1(
   TextOverflow? textOverflow,
   int? maxLines,
   FontStyle? fontStyle,
+  FontWeight? fontWeight,
 }) => Text(
   text.tr(),
   textAlign: textAlign,
@@ -78,6 +85,7 @@ Widget appTextS1(
     decoration: textDecoration,
     overflow: textOverflow,
     fontStyle: fontStyle,
+    fontWeight: fontWeight,
   ),
   maxLines: maxLines,
 );
@@ -90,6 +98,7 @@ Widget appTextS2(
   TextOverflow? textOverflow,
   int? maxLines,
   FontStyle? fontStyle,
+  FontWeight? fontWeight,
 }) => Text(
   text.tr(),
   textAlign: textAlign,
@@ -98,6 +107,7 @@ Widget appTextS2(
     decoration: textDecoration,
     overflow: textOverflow,
     fontStyle: fontStyle,
+    fontWeight: fontWeight,
   ),
   maxLines: maxLines,
 );
@@ -110,6 +120,7 @@ Widget appTextS3(
   TextOverflow? textOverflow,
   int? maxLines,
   FontStyle? fontStyle,
+  FontWeight? fontWeight,
 }) => Text(
   text.tr(),
   textAlign: textAlign,
@@ -118,6 +129,7 @@ Widget appTextS3(
     decoration: textDecoration,
     overflow: textOverflow,
     fontStyle: fontStyle,
+    fontWeight: fontWeight,
   ),
   maxLines: maxLines,
 );
@@ -130,6 +142,7 @@ Widget appTextS4(
   TextOverflow? textOverflow,
   int? maxLines,
   FontStyle? fontStyle,
+  FontWeight? fontWeight,
 }) => Text(
   text.tr(),
   textAlign: textAlign,
@@ -138,6 +151,7 @@ Widget appTextS4(
     decoration: textDecoration,
     overflow: textOverflow,
     fontStyle: fontStyle,
+    fontWeight: fontWeight,
   ),
   maxLines: maxLines,
 );
@@ -150,6 +164,7 @@ Widget appTextB1(
   TextOverflow? textOverflow,
   int? maxLines,
   FontStyle? fontStyle,
+  FontWeight? fontWeight,
 }) => Text(
   text.tr(),
   textAlign: textAlign,
@@ -158,6 +173,7 @@ Widget appTextB1(
     decoration: textDecoration,
     overflow: textOverflow,
     fontStyle: fontStyle,
+    fontWeight: fontWeight,
   ),
   maxLines: maxLines,
 );
@@ -170,6 +186,7 @@ Widget appTextB2(
   TextOverflow? textOverflow,
   int? maxLines,
   FontStyle? fontStyle,
+  FontWeight? fontWeight,
 }) => Text(
   text.tr(),
   textAlign: textAlign,
@@ -178,6 +195,7 @@ Widget appTextB2(
     decoration: textDecoration,
     overflow: textOverflow,
     fontStyle: fontStyle,
+    fontWeight: fontWeight,
   ),
   maxLines: maxLines,
 );

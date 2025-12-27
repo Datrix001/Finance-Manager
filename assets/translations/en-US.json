@@ -1,6 +1,5 @@
 {
   "app_name": "FinWise",
-
   "onbarding": {
     "log_in": "Log In",
     "sign_up": "Sign Up",
@@ -14,5 +13,45 @@
     "password": "Password",
     "or_sign_up": "or sign up with",
     "no_account": "Don't have an account?"
+  },
+  "sign_up": {
+    "create": "Create Account",
+    "full_name": "Full Name",
+    "f_example": "John Doe",
+    "email": "Email",
+    "e_example": "example@gmail.com",
+    "mobile": "Mobile Number",
+    "m_example": "912343534334",
+    "dob": "Date Of Birth",
+    "password": "Password",
+    "c_password": "Confirm Password",
+    "terms": "By continuing, you agree to  Terms of Use and Privacy  Policy.",
+    "sign": "Sign Up",
+    "already": "Already have an account?",
+    "log": "Log In"
+  },
+  "forgot": {
+    "name": "Forgot Password",
+    "reset": "Reset Password",
+    "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "email": "Enter Email Address",
+    "e_example": "example@gmail.com",
+    "next_step": "Next Step",
+    "sign_up": "Sign Up"
+  },
+  "otp": {
+    "security_pin": "Security Pin",
+    "enter_pin": "Enter Security Pin",
+    "accept": "Accept",
+    "send_again": "Send Again"
+  },
+  "new_password": {
+    "name": "New Password",
+    "confirm": "Confirm New Password",
+    "change_password": "Change Password"
+  },
+  "changed_password": {
+    "success": "Password Has been Changed successfully",
+    "failure": "Error in Changing Password"
   }
 }

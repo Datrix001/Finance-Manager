@@ -35,26 +35,15 @@ class Onboarding extends StatelessWidget {
               text: "onbarding.log_in".tr(),
               onPressed: () => context.push("/login"),
               width: 180.w,
+              isDiff: false,
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () => context.push("/signup"),
               style: TextButton.styleFrom(
                 padding: EdgeInsets.zero,
                 minimumSize: Size.zero,
               ),
               child: appTextS2('onbarding.sign_up', color: AppColors.secondary),
-            ),
-            TextButton(
-              onPressed: () {},
-              style: TextButton.styleFrom(
-                padding: EdgeInsets.zero,
-                minimumSize: Size.zero,
-                tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-              ),
-              child: appTextB2(
-                'onbarding.forgot_password',
-                color: AppColors.secondary,
-              ),
             ),
           ],
         ),

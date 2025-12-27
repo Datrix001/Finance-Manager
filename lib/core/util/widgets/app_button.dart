@@ -8,11 +8,13 @@ class AppButton extends StatelessWidget {
   final String text;
   final VoidCallback onPressed;
   final double? width;
+  final bool isDiff;
   const AppButton({
     super.key,
     required this.text,
     required this.onPressed,
     this.width,
+    required this.isDiff,
   });
 
   @override
@@ -22,12 +24,19 @@ class AppButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.primary,
+          elevation: 0.h,
+          backgroundColor: isDiff
+              ? AppColors.lightGreen.withAlpha(90)
+              : AppColors.primary,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadiusGeometry.circular(20.r),
           ),
         ),
-        child: appTextS2(text, color: AppColors.secondary),
+        child: appTextS2(
+          text,
+          color: AppColors.secondary,
+          fontWeight: FontWeight.w600,
+        ),
       ),
     );
   }

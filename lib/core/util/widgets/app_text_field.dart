@@ -1,8 +1,10 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:finwise/core/styles/app_text_style.dart';
+import 'package:finwise/gen/assets.gen.dart';
 import 'package:finwise/gen/colors.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class AppTextField extends StatelessWidget {
   final String hint;
@@ -13,7 +15,7 @@ class AppTextField extends StatelessWidget {
   final Widget? suffixIcon;
   final String? Function(String?)? validator;
   final VoidCallback? onTap;
-  const AppTextField({
+  AppTextField({
     super.key,
     required this.hint,
     this.controller,
@@ -25,49 +27,59 @@ class AppTextField extends StatelessWidget {
     this.onTap,
   });
 
+  final ValueNotifier<bool> _obscureNotifier = ValueNotifier(true);
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(top: 10.h),
-      child: TextFormField(
-        controller: controller,
-        obscureText: obscureText,
-        keyboardType: keyboardType,
-        validator: validator,
-        onTap: onTap,
-        style: AppTextStyles.s3,
-        decoration: InputDecoration(
-          hintText: hint.tr(),
-          hintStyle: AppTextStyles.b2.copyWith(
-            color: AppColors.black.withAlpha(120),
-          ),
-          prefixIcon: prefixIcon,
-          suffixIcon: suffixIcon,
-          fillColor: AppColors.lightGreen,
-          filled: true,
-          contentPadding: EdgeInsets.symmetric(
-            vertical: 16.h,
-            horizontal: 16.w,
-          ),
+    return ValueListenableBuilder<bool>(
+      valueListenable: _obscureNotifier,
+      builder: (context, _isHidden, _) {
+        return Padding(
+          padding: EdgeInsets.only(top: 10.h),
+          child: TextFormField(
+            controller: controller,
+            obscureText: obscureText ? _isHidden : false,
+            keyboardType: keyboardType,
+            validator: validator,
+            onTap: onTap,
+            style: AppTextStyles.b2,
+            decoration: InputDecoration(
+              hintText: hint.tr(),
+              hintStyle: AppTextStyles.b2.copyWith(
+                color: AppColors.black.withAlpha(120),
+              ),
+              prefixIcon: prefixIcon,
+              suffixIcon: obscureText
+                  ? IconButton(
+                      onPressed: () {
+                        _obscureNotifier.value = !_obscureNotifier.value;
+                      },
+                      icon: _isHidden
+                          ? SvgPicture.asset(Assets.svg.eye, height: 10.h)
+                          : Image.asset(Assets.images.view.path, height: 20.h),
+                    )
+                  : suffixIcon,
+              fillColor: AppColors.lightGreen.withAlpha(80),
+              filled: true,
+              contentPadding: EdgeInsets.symmetric(
+                vertical: 16.h,
+                horizontal: 16.w,
+              ),
 
-          // border: OutlineInputBorder(
-          //   borderRadius: BorderRadius.circular(16.r),
-          //   borderSide: BorderSide(color: AppColors.black.withAlpha(30)),
-          // ),
-          enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(16.r),
-            borderSide: BorderSide(color: AppColors.white.withAlpha(30)),
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20.r),
+                borderSide: BorderSide(color: AppColors.white.withAlpha(30)),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20.r),
+              ),
+              errorBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20.r),
+                borderSide: BorderSide(color: Colors.red),
+              ),
+            ),
           ),
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(16.r),
-            // borderSide: BorderSide(color: AppColors.primary, width: 2),
-          ),
-          errorBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(16.r),
-            borderSide: BorderSide(color: Colors.red),
-          ),
-        ),
-      ),
+        );
+      },
     );
   }
 }
