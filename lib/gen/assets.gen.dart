@@ -98,14 +98,70 @@ class $AssetsSvgGen {
   /// File path: assets/svg/Check Progress.svg
   String get checkProgress => 'assets/svg/Check Progress.svg';
 
+  /// File path: assets/svg/Expense.svg
+  String get expense => 'assets/svg/Expense.svg';
+
+  /// File path: assets/svg/Icon-Notification.svg
+  String get iconNotification => 'assets/svg/Icon-Notification.svg';
+
+  /// File path: assets/svg/Income.svg
+  String get income => 'assets/svg/Income.svg';
+
+  /// File path: assets/svg/Salary.svg
+  String get salary => 'assets/svg/Salary.svg';
+
   /// File path: assets/svg/Vector.svg
   String get vector => 'assets/svg/Vector.svg';
+
+  /// File path: assets/svg/check.svg
+  String get check => 'assets/svg/check.svg';
 
   /// File path: assets/svg/eye.svg
   String get eye => 'assets/svg/eye.svg';
 
+  /// File path: assets/svg/food.svg
+  String get food => 'assets/svg/food.svg';
+
+  /// File path: assets/svg/grocery.svg
+  String get grocery => 'assets/svg/grocery.svg';
+
+  /// File path: assets/svg/medicine.svg
+  String get medicine => 'assets/svg/medicine.svg';
+
+  /// File path: assets/svg/money.svg
+  String get money => 'assets/svg/money.svg';
+
+  /// File path: assets/svg/rent.svg
+  String get rent => 'assets/svg/rent.svg';
+
+  /// File path: assets/svg/savings.svg
+  String get savings => 'assets/svg/savings.svg';
+
+  /// File path: assets/svg/ticket.svg
+  String get ticket => 'assets/svg/ticket.svg';
+
+  /// File path: assets/svg/transport.svg
+  String get transport => 'assets/svg/transport.svg';
+
   /// List of all assets
-  List<String> get values => [checkProgress, vector, eye];
+  List<String> get values => [
+    checkProgress,
+    expense,
+    iconNotification,
+    income,
+    salary,
+    vector,
+    check,
+    eye,
+    food,
+    grocery,
+    medicine,
+    money,
+    rent,
+    savings,
+    ticket,
+    transport,
+  ];
 }
 
 class $AssetsTranslationsGen {

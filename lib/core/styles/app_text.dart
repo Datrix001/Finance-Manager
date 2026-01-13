@@ -2,9 +2,14 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:finwise/core/styles/app_text_style.dart';
 import 'package:flutter/material.dart';
 
+String formatMoney(num value) {
+  return NumberFormat('#,##0.00').format(value);
+}
+
 Widget appTextH1(
   String text, {
   Color? color,
+  bool translate = true,
   TextAlign? textAlign,
   TextDecoration? decoration,
   TextOverflow? overflow,
@@ -12,7 +17,7 @@ Widget appTextH1(
   FontStyle? fontStyle,
   FontWeight? fontWeight,
 }) => Text(
-  text.tr(),
+  translate ? text.tr() : text,
   textAlign: textAlign,
   style: AppTextStyles.h1.copyWith(
     color: color,
@@ -71,6 +76,7 @@ Widget appTextH3(
 Widget appTextS1(
   String text, {
   Color? color,
+  bool translate = true,
   TextAlign? textAlign,
   TextDecoration? textDecoration,
   TextOverflow? textOverflow,
@@ -78,7 +84,7 @@ Widget appTextS1(
   FontStyle? fontStyle,
   FontWeight? fontWeight,
 }) => Text(
-  text.tr(),
+  translate ? text.tr() : text,
   textAlign: textAlign,
   style: AppTextStyles.s1.copyWith(
     color: color,
@@ -93,6 +99,7 @@ Widget appTextS1(
 Widget appTextS2(
   String text, {
   Color? color,
+  bool translate = true,
   TextAlign? textAlign,
   TextDecoration? textDecoration,
   TextOverflow? textOverflow,
@@ -100,7 +107,8 @@ Widget appTextS2(
   FontStyle? fontStyle,
   FontWeight? fontWeight,
 }) => Text(
-  text.tr(),
+  translate ? text.tr() : text,
+
   textAlign: textAlign,
   style: AppTextStyles.s2.copyWith(
     color: color,
@@ -181,6 +189,8 @@ Widget appTextB1(
 Widget appTextB2(
   String text, {
   Color? color,
+  bool translate = true,
+
   TextAlign? textAlign,
   TextDecoration? textDecoration,
   TextOverflow? textOverflow,
@@ -188,7 +198,7 @@ Widget appTextB2(
   FontStyle? fontStyle,
   FontWeight? fontWeight,
 }) => Text(
-  text.tr(),
+  translate ? text.tr() : text,
   textAlign: textAlign,
   style: AppTextStyles.b2.copyWith(
     color: color,

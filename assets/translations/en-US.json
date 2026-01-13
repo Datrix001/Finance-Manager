@@ -52,5 +52,25 @@
   "changed_password": {
     "success": "Password Has been Changed successfully",
     "failure": "Error in Changing Password"
+  },
+  "home": {
+    "welcome": "Hi, Welcome Back",
+    "greetings": {
+      "morning": "Good Morning",
+      "afternoon": "Good Afternoon",
+      "evening": "Good Evening"
+    },
+    "balance": "Total Balance",
+    "expense": "Total Expense",
+    "comment": "30% of your expenses, looks good.",
+    "salary": "Salary",
+    "groceries": "Groceries",
+    "rent": "Rent",
+    "transactions": "Transactions"
+  },
+  "notification": {
+    "name": "Notification",
+    "today": "Today",
+    "yesterday": "Yesterday"
   }
 }
