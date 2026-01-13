@@ -1,5 +1,3 @@
-import 'package:easy_localization/easy_localization.dart';
-import 'package:finwise/core/navigation/app_router.dart';
 import 'package:finwise/core/styles/app_text.dart';
 import 'package:finwise/core/util/widgets/app_button.dart';
 import 'package:finwise/core/util/widgets/app_text_field.dart';
@@ -61,7 +59,7 @@ class LoginScreen extends StatelessWidget {
                       80.verticalSpace,
                       AppButton(
                         text: 'onbarding.log_in',
-                        onPressed: () {},
+                        onPressed: () => context.pushReplacement("/home"),
                         width: 150.w,
                         isDiff: false,
                       ),

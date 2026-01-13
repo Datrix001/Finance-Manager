@@ -1,4 +1,3 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:finwise/core/styles/app_text.dart';
 import 'package:finwise/core/util/widgets/app_button.dart';
 import 'package:finwise/gen/assets.gen.dart';
@@ -32,7 +31,7 @@ class Onboarding extends StatelessWidget {
             ),
             40.verticalSpace,
             AppButton(
-              text: "onbarding.log_in".tr(),
+              text: "onbarding.log_in",
               onPressed: () => context.push("/login"),
               width: 180.w,
               isDiff: false,

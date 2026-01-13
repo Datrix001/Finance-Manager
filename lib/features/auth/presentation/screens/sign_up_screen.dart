@@ -1,16 +1,21 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:finwise/core/styles/app_text.dart';
 import 'package:finwise/core/util/widgets/app_button.dart';
 import 'package:finwise/core/util/widgets/app_text_field.dart';
-import 'package:finwise/gen/assets.gen.dart';
 import 'package:finwise/gen/colors.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 class SignUpScreen extends StatelessWidget {
-  const SignUpScreen({super.key});
+  SignUpScreen({super.key});
   static const routeName = "/signup";
+  final supabase = Supabase.instance.client;
+
+  final TextEditingController fullname = TextEditingController();
+  final TextEditingController email = TextEditingController();
+  final TextEditingController password = TextEditingController();
+  final TextEditingController c_password = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -52,6 +57,7 @@ class SignUpScreen extends StatelessWidget {
                       AppTextField(
                         hint: "sign_up.f_example",
                         obscureText: false,
+                        controller: fullname,
                       ),
                       20.verticalSpace,
                       Align(
@@ -61,6 +67,7 @@ class SignUpScreen extends StatelessWidget {
                       AppTextField(
                         hint: "sign_up.e_example",
                         obscureText: false,
+                        controller: email,
                       ),
 
                       20.verticalSpace,
@@ -68,7 +75,11 @@ class SignUpScreen extends StatelessWidget {
                         alignment: Alignment.centerLeft,
                         child: appTextS3("sign_up.password"),
                       ),
-                      AppTextField(hint: "sign_up.password", obscureText: true),
+                      AppTextField(
+                        hint: "sign_up.password",
+                        obscureText: true,
+                        controller: password,
+                      ),
                       20.verticalSpace,
                       Align(
                         alignment: Alignment.centerLeft,
@@ -77,6 +88,7 @@ class SignUpScreen extends StatelessWidget {
                       AppTextField(
                         hint: "sign_up.c_password",
                         obscureText: true,
+                        controller: c_password,
                       ),
                       30.verticalSpace,
                       SizedBox(
@@ -89,7 +101,7 @@ class SignUpScreen extends StatelessWidget {
                       10.verticalSpace,
                       AppButton(
                         text: 'sign_up.sign',
-                        onPressed: () {},
+                        onPressed: () => context.pushReplacement("/home"),
                         width: 150.w,
                         isDiff: false,
                       ),
@@ -101,7 +113,7 @@ class SignUpScreen extends StatelessWidget {
                           TextButton(
                             onPressed: () => context.push("/login"),
                             child: appTextB2(
-                              "sign_up.log",
+                              "onbarding.log_in",
                               color: AppColors.blue,
                             ),
                           ),
@@ -118,5 +130,17 @@ class SignUpScreen extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  Future<void> signUp() async {
+    if (password.text == c_password.text) {
+      await supabase.auth.signUp(
+        password: password.text,
+        email: email.text,
+        data: {'fullname': fullname.text},
+      );
+    } else {
+      print("Error password");
+    }
   }
 }

@@ -32,12 +32,12 @@ class AppTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return ValueListenableBuilder<bool>(
       valueListenable: _obscureNotifier,
-      builder: (context, _isHidden, _) {
+      builder: (context, isHidden, _) {
         return Padding(
           padding: EdgeInsets.only(top: 10.h),
           child: TextFormField(
             controller: controller,
-            obscureText: obscureText ? _isHidden : false,
+            obscureText: obscureText ? isHidden : false,
             keyboardType: keyboardType,
             validator: validator,
             onTap: onTap,
@@ -53,7 +53,7 @@ class AppTextField extends StatelessWidget {
                       onPressed: () {
                         _obscureNotifier.value = !_obscureNotifier.value;
                       },
-                      icon: _isHidden
+                      icon: isHidden
                           ? SvgPicture.asset(Assets.svg.eye, height: 10.h)
                           : Image.asset(Assets.images.view.path, height: 20.h),
                     )

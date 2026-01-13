@@ -27,8 +27,7 @@
     "c_password": "Confirm Password",
     "terms": "By continuing, you agree to  Terms of Use and Privacy  Policy.",
     "sign": "Sign Up",
-    "already": "Already have an account?",
-    "log": "Log In"
+    "already": "Already have an account?"
   },
   "forgot": {
     "name": "Forgot Password",

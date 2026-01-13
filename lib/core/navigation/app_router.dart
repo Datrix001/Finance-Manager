@@ -1,11 +1,12 @@
-import 'package:finwise/features/onboarding/presentation/screens/changed_password_screen.dart';
-import 'package:finwise/features/onboarding/presentation/screens/forgot_password_screen.dart';
-import 'package:finwise/features/onboarding/presentation/screens/login_screen.dart';
-import 'package:finwise/features/onboarding/presentation/screens/new_password.dart';
+import 'package:finwise/features/auth/presentation/screens/changed_password_screen.dart';
+import 'package:finwise/features/auth/presentation/screens/forgot_password_screen.dart';
+import 'package:finwise/features/auth/presentation/screens/login_screen.dart';
+import 'package:finwise/features/auth/presentation/screens/new_password.dart';
+import 'package:finwise/features/home/presentation/screens/home.dart';
 import 'package:finwise/features/onboarding/presentation/screens/onboarding_screen.dart';
-import 'package:finwise/features/onboarding/presentation/screens/otp_screen.dart';
-import 'package:finwise/features/onboarding/presentation/screens/sign_up_screen.dart';
-import 'package:finwise/features/onboarding/presentation/screens/splash_screen.dart';
+import 'package:finwise/features/auth/presentation/screens/otp_screen.dart';
+import 'package:finwise/features/auth/presentation/screens/sign_up_screen.dart';
+import 'package:finwise/features/splash/presentation/screens/splash_screen.dart';
 import 'package:go_router/go_router.dart';
 
 class AppRouter {
@@ -52,6 +53,11 @@ class AppRouter {
         path: "/changed-password",
         name: "/changed-password",
         builder: (context, state) => ChangedPasswordScreen(),
+      ),
+      GoRoute(
+        path: "/home",
+        name: "/home",
+        builder: (context, state) => Home(),
       ),
     ],
   );

@@ -1,16 +1,10 @@
-import 'package:easy_localization/easy_localization.dart';
-import 'package:finwise/core/navigation/app_router.dart';
 import 'package:finwise/core/styles/app_text.dart';
 import 'package:finwise/core/util/widgets/app_button.dart';
 import 'package:finwise/core/util/widgets/app_text_field.dart';
-import 'package:finwise/features/onboarding/presentation/screens/changed_password_screen.dart';
-import 'package:finwise/features/onboarding/presentation/widgets/pin_input.dart';
-import 'package:finwise/gen/assets.gen.dart';
 import 'package:finwise/gen/colors.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:pinput/pinput.dart';
 
 class NewPassword extends StatelessWidget {
   const NewPassword({super.key});

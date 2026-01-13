@@ -1,4 +1,3 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:finwise/core/styles/app_text.dart';
 import 'package:finwise/gen/colors.gen.dart';
 import 'package:flutter/material.dart';
