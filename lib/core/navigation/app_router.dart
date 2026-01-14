@@ -8,6 +8,7 @@ import 'package:finwise/features/notifications/presentation/screens/notification
 import 'package:finwise/features/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:finwise/features/auth/presentation/screens/otp_screen.dart';
 import 'package:finwise/features/auth/presentation/screens/sign_up_screen.dart';
+import 'package:finwise/features/profile/presentation/screens/profile_screen.dart';
 import 'package:finwise/features/splash/presentation/screens/splash_screen.dart';
 import 'package:go_router/go_router.dart';
 
@@ -70,6 +71,11 @@ class AppRouter {
         path: "/homeScreen",
         name: "/homeScreen",
         builder: (context, state) => HomeScreen(),
+      ),
+      GoRoute(
+        path: "/profileScreen",
+        name: "/profileScreen",
+        builder: (context, state) => ProfileScreen(),
       ),
     ],
   );

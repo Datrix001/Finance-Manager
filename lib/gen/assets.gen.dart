@@ -131,17 +131,29 @@ class $AssetsSvgGen {
   /// File path: assets/svg/grocery.svg
   String get grocery => 'assets/svg/grocery.svg';
 
+  /// File path: assets/svg/help.svg
+  String get help => 'assets/svg/help.svg';
+
+  /// File path: assets/svg/logout.svg
+  String get logout => 'assets/svg/logout.svg';
+
   /// File path: assets/svg/medicine.svg
   String get medicine => 'assets/svg/medicine.svg';
 
   /// File path: assets/svg/money.svg
   String get money => 'assets/svg/money.svg';
 
+  /// File path: assets/svg/profile.svg
+  String get profile => 'assets/svg/profile.svg';
+
   /// File path: assets/svg/rent.svg
   String get rent => 'assets/svg/rent.svg';
 
   /// File path: assets/svg/savings.svg
   String get savings => 'assets/svg/savings.svg';
+
+  /// File path: assets/svg/setting.svg
+  String get setting => 'assets/svg/setting.svg';
 
   /// File path: assets/svg/star.svg
   String get star => 'assets/svg/star.svg';
@@ -166,10 +178,14 @@ class $AssetsSvgGen {
     eye,
     food,
     grocery,
+    help,
+    logout,
     medicine,
     money,
+    profile,
     rent,
     savings,
+    setting,
     star,
     ticket,
     transport,

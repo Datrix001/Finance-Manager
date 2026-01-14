@@ -76,5 +76,14 @@
     "reminder": "Reminder!",
     "transactions": "Transactions",
     "new_update": "New Update"
+  },
+  "profile": {
+    "title": "Profile",
+    "name": "John Smith",
+    "id": "ID:2503343",
+    "edit_profile": "Edit Profile",
+    "setting": "Setting",
+    "help": "Help",
+    "logout": "Logout"
   }
 }

@@ -59,7 +59,7 @@ class LoginScreen extends StatelessWidget {
                       80.verticalSpace,
                       AppButton(
                         text: 'onbarding.log_in',
-                        onPressed: () => context.pushReplacement("/homeScreen"),
+                        onPressed: () => context.go("/homeScreen"),
                         width: 150.w,
                         isDiff: false,
                       ),
