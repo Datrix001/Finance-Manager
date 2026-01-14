@@ -71,6 +71,10 @@
   "notification": {
     "name": "Notification",
     "today": "Today",
-    "yesterday": "Yesterday"
+    "yesterday": "Yesterday",
+    "week": "This Week",
+    "reminder": "Reminder!",
+    "transactions": "Transactions",
+    "new_update": "New Update"
   }
 }

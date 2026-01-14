@@ -113,8 +113,14 @@ class $AssetsSvgGen {
   /// File path: assets/svg/Vector.svg
   String get vector => 'assets/svg/Vector.svg';
 
+  /// File path: assets/svg/bell.svg
+  String get bell => 'assets/svg/bell.svg';
+
   /// File path: assets/svg/check.svg
   String get check => 'assets/svg/check.svg';
+
+  /// File path: assets/svg/dollar.svg
+  String get dollar => 'assets/svg/dollar.svg';
 
   /// File path: assets/svg/eye.svg
   String get eye => 'assets/svg/eye.svg';
@@ -137,6 +143,9 @@ class $AssetsSvgGen {
   /// File path: assets/svg/savings.svg
   String get savings => 'assets/svg/savings.svg';
 
+  /// File path: assets/svg/star.svg
+  String get star => 'assets/svg/star.svg';
+
   /// File path: assets/svg/ticket.svg
   String get ticket => 'assets/svg/ticket.svg';
 
@@ -151,7 +160,9 @@ class $AssetsSvgGen {
     income,
     salary,
     vector,
+    bell,
     check,
+    dollar,
     eye,
     food,
     grocery,
@@ -159,6 +170,7 @@ class $AssetsSvgGen {
     money,
     rent,
     savings,
+    star,
     ticket,
     transport,
   ];

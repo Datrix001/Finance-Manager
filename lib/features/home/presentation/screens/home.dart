@@ -135,21 +135,21 @@ class Home extends StatelessWidget {
                         ),
                       ),
                       appTextS2("Transactions"),
-                      10.verticalSpace,
+                      20.verticalSpace,
                       CustomTransactions(
                         icons: SvgPicture.asset(Assets.svg.money),
                         type: 'Cash',
                         categories: 'Cash',
                         money: 200,
                       ),
-                      10.verticalSpace,
+                      20.verticalSpace,
                       CustomTransactions(
                         icons: SvgPicture.asset(Assets.svg.food),
                         type: 'Ganpat',
                         categories: 'Food',
                         money: 3000,
                       ),
-                      10.verticalSpace,
+                      20.verticalSpace,
 
                       CustomTransactions(
                         icons: SvgPicture.asset(Assets.svg.grocery),
@@ -157,7 +157,7 @@ class Home extends StatelessWidget {
                         categories: 'Pantry',
                         money: 488,
                       ),
-                      10.verticalSpace,
+                      20.verticalSpace,
 
                       CustomTransactions(
                         icons: SvgPicture.asset(Assets.svg.grocery),
@@ -165,7 +165,7 @@ class Home extends StatelessWidget {
                         categories: 'Pantry',
                         money: 123,
                       ),
-                      10.verticalSpace,
+                      20.verticalSpace,
 
                       CustomTransactions(
                         icons: SvgPicture.asset(Assets.svg.grocery),
