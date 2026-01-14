@@ -3,6 +3,7 @@ import 'package:finwise/features/auth/presentation/screens/forgot_password_scree
 import 'package:finwise/features/auth/presentation/screens/login_screen.dart';
 import 'package:finwise/features/auth/presentation/screens/new_password.dart';
 import 'package:finwise/features/home/presentation/screens/home.dart';
+import 'package:finwise/features/home/presentation/screens/home_screen.dart';
 import 'package:finwise/features/notifications/presentation/screens/notification_screen.dart';
 import 'package:finwise/features/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:finwise/features/auth/presentation/screens/otp_screen.dart';
@@ -64,6 +65,11 @@ class AppRouter {
         path: "/notification",
         name: "/notification",
         builder: (context, state) => NotificationScreen(),
+      ),
+      GoRoute(
+        path: "/homeScreen",
+        name: "/homeScreen",
+        builder: (context, state) => HomeScreen(),
       ),
     ],
   );
