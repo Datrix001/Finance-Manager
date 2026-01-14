@@ -84,6 +84,22 @@
     "edit_profile": "Edit Profile",
     "setting": "Setting",
     "help": "Help",
-    "logout": "Logout"
+    "logout": "Logout",
+    "end": "End Session",
+    "end_question": "Are you sure want to logout?",
+    "yes": "Yes,End Session",
+    "cancel": "Cancel"
+  },
+  "edit_profile": {
+    "title": "Edit My Profile",
+    "name": "John Smith",
+    "id": "ID:2503343",
+    "account_setting": "Account Setting",
+    "username": "Username",
+    "phone_example": "+91 94784394323",
+    "phone": "Phone Number",
+    "email": "Email Address",
+    "email_example": "example@gmail.com",
+    "update_profile": "Update Profile"
   }
 }

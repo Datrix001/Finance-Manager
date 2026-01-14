@@ -19,7 +19,7 @@ class CustomIconButton extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(top: 20.h, left: 20.w, bottom: 20.h),
       child: GestureDetector(
-        onTap: () => onTap,
+        onTap: onTap,
         child: Row(
           children: [
             Container(
