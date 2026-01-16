@@ -113,6 +113,9 @@ class $AssetsSvgGen {
   /// File path: assets/svg/Vector.svg
   String get vector => 'assets/svg/Vector.svg';
 
+  /// File path: assets/svg/analyse.svg
+  String get analyse => 'assets/svg/analyse.svg';
+
   /// File path: assets/svg/bell.svg
   String get bell => 'assets/svg/bell.svg';
 
@@ -134,6 +137,9 @@ class $AssetsSvgGen {
   /// File path: assets/svg/help.svg
   String get help => 'assets/svg/help.svg';
 
+  /// File path: assets/svg/home.svg
+  String get home => 'assets/svg/home.svg';
+
   /// File path: assets/svg/logout.svg
   String get logout => 'assets/svg/logout.svg';
 
@@ -145,6 +151,9 @@ class $AssetsSvgGen {
 
   /// File path: assets/svg/profile.svg
   String get profile => 'assets/svg/profile.svg';
+
+  /// File path: assets/svg/profile1.svg
+  String get profile1 => 'assets/svg/profile1.svg';
 
   /// File path: assets/svg/rent.svg
   String get rent => 'assets/svg/rent.svg';
@@ -161,8 +170,14 @@ class $AssetsSvgGen {
   /// File path: assets/svg/ticket.svg
   String get ticket => 'assets/svg/ticket.svg';
 
+  /// File path: assets/svg/transactions.svg
+  String get transactions => 'assets/svg/transactions.svg';
+
   /// File path: assets/svg/transport.svg
   String get transport => 'assets/svg/transport.svg';
+
+  /// File path: assets/svg/wallet.svg
+  String get wallet => 'assets/svg/wallet.svg';
 
   /// List of all assets
   List<String> get values => [
@@ -172,6 +187,7 @@ class $AssetsSvgGen {
     income,
     salary,
     vector,
+    analyse,
     bell,
     check,
     dollar,
@@ -179,16 +195,20 @@ class $AssetsSvgGen {
     food,
     grocery,
     help,
+    home,
     logout,
     medicine,
     money,
     profile,
+    profile1,
     rent,
     savings,
     setting,
     star,
     ticket,
+    transactions,
     transport,
+    wallet,
   ];
 }
 

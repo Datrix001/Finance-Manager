@@ -1,6 +1,8 @@
+import 'package:finwise/gen/assets.gen.dart';
 import 'package:finwise/gen/colors.gen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class CustomNavigationBar extends StatelessWidget {
   final ValueNotifier<NavItem> notifier;
@@ -25,15 +27,47 @@ class CustomNavigationBar extends StatelessWidget {
             padding: EdgeInsets.all(20.w),
             child: Row(
               children: [
-                _navItem(Icons.home, NavItem.home, selected),
-                _navItem(Icons.bar_chart, NavItem.analyse, selected),
-                _navItem(Icons.swap_horiz, NavItem.transfer, selected),
                 _navItem(
-                  Icons.account_balance_wallet,
+                  SvgPicture.asset(Assets.svg.home, width: 10.h, height: 10.h),
+                  NavItem.home,
+                  selected,
+                ),
+                _navItem(
+                  SvgPicture.asset(
+                    Assets.svg.analyse,
+                    width: 10.h,
+                    height: 10.h,
+                  ),
+                  NavItem.analyse,
+                  selected,
+                ),
+                _navItem(
+                  SvgPicture.asset(
+                    Assets.svg.transactions,
+                    width: 10.h,
+                    height: 10.h,
+                  ),
+                  NavItem.transfer,
+                  selected,
+                ),
+                _navItem(
+                  SvgPicture.asset(
+                    Assets.svg.wallet,
+                    width: 10.h,
+                    height: 10.h,
+                  ),
                   NavItem.wallet,
                   selected,
                 ),
-                _navItem(Icons.person, NavItem.profile, selected),
+                _navItem(
+                  SvgPicture.asset(
+                    Assets.svg.profile,
+                    width: 10.h,
+                    height: 10.h,
+                  ),
+                  NavItem.profile,
+                  selected,
+                ),
               ],
             ),
           ),
@@ -43,7 +77,7 @@ class CustomNavigationBar extends StatelessWidget {
     );
   }
 
-  Widget _navItem(IconData icon, NavItem item, NavItem selected) {
+  Widget _navItem(Widget icon, NavItem item, NavItem selected) {
     final bool isActive = item == selected;
 
     return Expanded(
@@ -56,9 +90,11 @@ class CustomNavigationBar extends StatelessWidget {
             width: 44.w,
             decoration: BoxDecoration(
               color: isActive ? AppColors.primary : Colors.transparent,
-              shape: BoxShape.circle,
+              borderRadius: BorderRadius.circular(14.r),
+              shape: BoxShape.rectangle,
             ),
-            child: Icon(icon, color: isActive ? Colors.white : AppColors.black),
+            // child: Icon(icon, color: isActive ? Colors.white : AppColors.black),
+            child: Padding(padding: EdgeInsets.all(9), child: icon),
           ),
         ),
       ),

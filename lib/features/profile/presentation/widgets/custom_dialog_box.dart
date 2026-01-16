@@ -25,7 +25,7 @@ class CustomDialogBox extends StatelessWidget {
     return Dialog(
       backgroundColor: AppColors.transparent,
       child: Container(
-        height: 250.h,
+        height: 220.h,
         width: double.maxFinite,
         decoration: BoxDecoration(
           color: AppColors.white,

@@ -17,7 +17,7 @@ class CustomIconButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 20.h, left: 20.w, bottom: 20.h),
+      padding: EdgeInsets.only(top: 20.h, left: 20.w, bottom: 10.h),
       child: GestureDetector(
         onTap: onTap,
         child: Row(
@@ -29,7 +29,7 @@ class CustomIconButton extends StatelessWidget {
                 color: AppColors.blue.withGreen(98),
                 borderRadius: BorderRadius.all(Radius.circular(20.r)),
               ),
-              child: Padding(padding: EdgeInsets.all(10.h), child: icon),
+              child: Padding(padding: EdgeInsets.all(13.h), child: icon),
             ),
             20.horizontalSpace,
             appTextS3(title),

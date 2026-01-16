@@ -17,14 +17,17 @@ class AppColors {
   /// Color: #FF000000
   static const Color black = Color(0xFF000000);
 
-  /// Color: #0068FF
-  static const Color blue = Color(0xFF0068FF);
+  /// Color: #536DFE
+  static const Color blue = Color(0xFF536DFE);
 
   /// Color: #DFF7E2
   static const Color lightGreen = Color(0xFFDFF7E2);
 
   /// Color: #00D09E
   static const Color primary = Color(0xFF00D09E);
+
+  /// Color: #963030
+  static const Color red = Color(0xFF963030);
 
   /// Color: #093030
   static const Color secondary = Color(0xFF093030);

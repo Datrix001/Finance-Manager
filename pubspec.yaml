@@ -82,14 +82,3 @@ flutter_launcher_icons:
   ios: true
   image_path: "assets/images/icon.png"
   adaptive_icon_background: "#DFF7E2"
-# flutter_native_splash:
-#   color: "#00D09E"
-#   image: assets/images/Vector.png
-
-#   android: true
-#   ios: true
-#   web: true
-
-#   android_12:
-#     color: "#00D09E"
-#     image: assets/images/Vector.png

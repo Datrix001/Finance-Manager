@@ -41,20 +41,20 @@ class NotificationScreen extends StatelessWidget {
                   title: "notification.reminder",
                   about:
                       "Set up your automatic savings to meet your savings goal...",
-                  time: "17:00 - April 24",
+                  time: "16:00 ",
                 ),
                 CustomNotification(
                   icon: SvgPicture.asset(Assets.svg.star),
                   title: "notification.new_update",
                   about:
                       "Set up your automatic savings to meet your savings goal...",
-                  time: "17:00 - April 24",
+                  time: "12:00 ",
                 ),
                 CustomNotification(
                   icon: SvgPicture.asset(Assets.svg.dollar),
                   title: "notification.transactions",
                   about: "A new transaction has been registered",
-                  time: "17:00 - April 24",
+                  time: "10:00",
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 20.h, left: 30.w),
@@ -65,27 +65,27 @@ class NotificationScreen extends StatelessWidget {
                   title: "notification.reminder",
                   about:
                       "Set up your automatic savings to meet your savings goal...",
-                  time: "17:00 - April 24",
+                  time: "17:00 ",
                 ),
                 CustomNotification(
                   icon: SvgPicture.asset(Assets.svg.star),
                   title: "notification.new_update",
                   about:
                       "Set up your automatic savings to meet your savings goal...",
-                  time: "17:00 - April 24",
+                  time: "15:00 ",
                 ),
                 CustomNotification(
                   icon: SvgPicture.asset(Assets.svg.dollar),
                   title: "notification.transactions",
                   about: "A new transaction has been registered",
-                  time: "17:00 - April 24",
+                  time: "12:00 ",
                 ),
                 CustomNotification(
                   icon: SvgPicture.asset(Assets.svg.bell),
                   title: "notification.reminder",
                   about:
                       "Set up your automatic savings to meet your savings goal...",
-                  time: "17:00 - April 24",
+                  time: "7:00 ",
                 ),
               ],
             ),

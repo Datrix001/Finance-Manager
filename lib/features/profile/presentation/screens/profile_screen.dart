@@ -53,7 +53,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                       20.verticalSpace,
                       CustomIconButton(
-                        icon: SvgPicture.asset(Assets.svg.profile),
+                        icon: SvgPicture.asset(Assets.svg.profile1),
                         title: "profile.edit_profile",
                         onTap: () => context.push("/editProfile"),
                       ),
@@ -101,8 +101,8 @@ class ProfileScreen extends StatelessWidget {
                         borderRadius: BorderRadius.all(Radius.circular(90.r)),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(20.w),
-                        child: SvgPicture.asset(Assets.svg.profile),
+                        padding: EdgeInsets.all(25.w),
+                        child: SvgPicture.asset(Assets.svg.profile1),
                       ),
                     ),
                   ),

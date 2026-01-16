@@ -80,7 +80,7 @@ class Home extends StatelessWidget {
                         appTextS2(
                           "-\$${formatMoney(1783)}",
                           translate: true,
-                          color: AppColors.blue,
+                          color: AppColors.red,
                         ),
                       ],
                     ),
@@ -139,38 +139,43 @@ class Home extends StatelessWidget {
                       CustomTransactions(
                         icons: SvgPicture.asset(Assets.svg.money),
                         type: 'Cash',
-                        categories: 'Cash',
+                        // categories: 'Cash',
                         money: 200,
+                        isExpense: false,
                       ),
                       20.verticalSpace,
                       CustomTransactions(
                         icons: SvgPicture.asset(Assets.svg.food),
                         type: 'Ganpat',
-                        categories: 'Food',
+                        // categories: 'Food',
                         money: 3000,
+                        isExpense: true,
                       ),
                       20.verticalSpace,
 
                       CustomTransactions(
                         icons: SvgPicture.asset(Assets.svg.grocery),
                         type: 'Instamart',
-                        categories: 'Pantry',
+                        // categories: 'Pantry',
                         money: 488,
+                        isExpense: true,
                       ),
                       20.verticalSpace,
 
                       CustomTransactions(
                         icons: SvgPicture.asset(Assets.svg.grocery),
                         type: 'Blinkit',
-                        categories: 'Pantry',
+                        // categories: 'Pantry',
                         money: 123,
+                        isExpense: false,
                       ),
                       20.verticalSpace,
 
                       CustomTransactions(
                         icons: SvgPicture.asset(Assets.svg.grocery),
                         type: 'Blinkit',
-                        categories: 'Pantry',
+                        // categories: 'Pantry',
+                        isExpense: true,
                         money: 757,
                       ),
                     ],
